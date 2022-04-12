@@ -13,7 +13,8 @@ export default async function handler(
 
   if(req.method === 'POST') {
     const data = req.body.data;
-    await insertLogIntoBlock(data);
+    const databaseId = req.body.databaseId;
+    await insertLogIntoBlock(data, databaseId);
   }
 
   res.status(200).json({message: "success"});

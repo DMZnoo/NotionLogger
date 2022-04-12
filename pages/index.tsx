@@ -25,7 +25,7 @@ const Home: NextPage = () => {
     setLoading(true);
     const token = window.localStorage.getItem("api-token");
     const databaseId = window.localStorage.getItem("database-id");
-    console.log("token: ", token)
+
     if(token && databaseId) {
       axios.post('/api/init',{
         token: token,

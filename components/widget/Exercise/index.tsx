@@ -11,7 +11,6 @@ const Exercise = () => {
     const [isOpen, setIsOpen] = React.useState<boolean>(false);
 
   const onSubmit = (newData: any) => {
-    console.log("data: ", newData); 
     setExerciseData((data: any) => [...data, newData]);
     reset();
   }

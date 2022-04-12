@@ -14,6 +14,7 @@ const Log = () => {
     const date = moment().format('MMMM Do YYYY');
 
     const onSubmit = (data: any) => {
+        const databaseId = window.localStorage.getItem("database-id");
         const temp = {
             title: data['logTitle'],
             description: data['logDescription'],
@@ -24,7 +25,8 @@ const Log = () => {
         setLogData(temp);
 
         axios.post(`/api/log`, {
-            data: temp
+            data: temp,
+            databaseId: databaseId
         }).then((res) => {
             console.log("response: ", res);
             setLogData({});
