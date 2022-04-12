@@ -3,7 +3,7 @@ import { insertLogIntoBlock } from '@lib/notion';
 import type { NextApiRequest, NextApiResponse } from 'next'
 
 type Data = {
-  name: string
+  message: string
 }
 
 export default async function handler(
@@ -16,5 +16,5 @@ export default async function handler(
     await insertLogIntoBlock(data);
   }
 
-  res.status(200);
+  res.status(200).json({message: "success"});
 }
