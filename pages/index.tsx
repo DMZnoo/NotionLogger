@@ -15,17 +15,6 @@ import InstructionModal from '@components/widget/Modal/InstructionModal';
 import IntegrationModal from '@components/widget/Modal/IntegrationModal';
 
 
-export const getStaticProps = async (context) => {
-
-  // const database = await getDatabase();
-
-  // await updateDatabase();
-
-  return {
-    props: {}
-  }
-};
-
 const Home: NextPage = () => {
   const {loading, setLoading, isIntegrated, setIsIntegrated} = React.useContext<AppContextProps>(AppContext);
   const [enabled, setEnabled] = React.useState(false);

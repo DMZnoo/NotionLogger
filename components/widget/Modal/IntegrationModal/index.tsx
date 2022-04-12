@@ -17,7 +17,7 @@ const IntegrationModal: React.FC<IIntegrationModal> = ({isOpen, setIsOpen}) => {
   const {loading, setLoading, setIsIntegrated} = React.useContext<AppContextProps>(AppContext);
 
 
-  const onSubmit = (data) => {
+  const onSubmit = (data: any) => {
     setLoading(true);
     window.localStorage.setItem("api-token", data.apiToken);
     window.localStorage.setItem("database-id", data.databaseId);

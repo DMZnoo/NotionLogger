@@ -61,11 +61,11 @@ const InstructionModal: React.FC<IInstructionModal> = ({isOpen, setIsOpen}) => {
                       <Image src="/notion-add-page-link.png" layout="responsive" width="500px" height="200px" objectFit="contain" alt="notion-add-page-link-image"/>
                     </div>
                     <div className="flex flex-col">
-                      <p>2. Create a database by typing <code>/database</code>. You're going to select <strong>Table Database - Inline</strong></p>
+                      <p>2. Create a database by typing <code>/database</code>. You&apos;re going to select <strong>Table Database - Inline</strong></p>
                       <Image src="/notion-database.png" layout="responsive" width="500px" height="150px" objectFit="contain" alt="notion-database"/>
                     </div>
                     <div className="flex flex-col">
-                      <p>3. Go to Settings & Members > Integrations > Develop your own integrations </p>
+                      <p>3. Go to Settings and Members &gt; Integrations &gt; Develop your own integrations </p>
                       <Image src="/notion-integration-tab.png" layout="responsive" width="500px" height="200px" objectFit="contain" alt="notion-integration-tab"/>
                     </div>
                     <div className="flex flex-col">
@@ -83,7 +83,7 @@ const InstructionModal: React.FC<IInstructionModal> = ({isOpen, setIsOpen}) => {
                     <div className="flex flex-col mb-8">
                       <p>6. Copy the database id from the url: <code>https://www.notion.so/&lt;<strong>database_id</strong>&gt;?v=&lt;view_id&gt;</code> </p>
                     </div>
-                    <Heading>Now you're ready to integrate with Notion!</Heading>
+                    <Heading>Now you&apos;re ready to integrate with Notion!</Heading>
                   </div>
               </div>
             </Transition.Child>

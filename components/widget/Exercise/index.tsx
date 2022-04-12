@@ -12,7 +12,7 @@ const Exercise = () => {
 
   const onSubmit = (newData: any) => {
     console.log("data: ", newData); 
-    setExerciseData(data => [...data, newData]);
+    setExerciseData((data: any) => [...data, newData]);
     reset();
   }
 
@@ -118,7 +118,7 @@ const Exercise = () => {
             </tr>
             </thead>
             <tbody>
-            {exerciseData && exerciseData.map((dat, i) => {
+            {exerciseData && exerciseData.map((dat: any, i: number) => {
                 return (
                 <tr className={`bg-white ${i === exerciseData.length-1 ? "" : "border-b dark:border-gray-700"} dark:bg-gray-800`} key={`${dat}-${i}`}>
                     <th scope="row" className="capitalize px-6 py-4 font-medium text-gray-900 dark:text-white whitespace-nowrap">{dat.exercise}</th>

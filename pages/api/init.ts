@@ -3,7 +3,7 @@ import { updateDatabase, initializeNotionClient } from '@lib/notion';
 import type { NextApiRequest, NextApiResponse } from 'next'
 
 type Data = {
-  name: string
+  message: string
 }
 
 export default async function handler(
